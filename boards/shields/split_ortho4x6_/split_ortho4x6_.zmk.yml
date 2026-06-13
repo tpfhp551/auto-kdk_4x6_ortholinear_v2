@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: split_ortho4x6_
+name: split_ortho4x6_
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - split_ortho4x6__left
+  - split_ortho4x6__right
