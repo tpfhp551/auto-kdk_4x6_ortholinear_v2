@@ -8,41 +8,41 @@
 
         layer_0 {
             bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none
+                &none &none &none &none &none &none   &none &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none             &none &none &none
+				                                                              &none &none &none
             >;
         };
 
         layer_1 {
             bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none
+                &none &none &none &none &none &none   &none &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none             &none &none &none
+				                                                              &none &none &none
             >;
         };
 
         layer_2 {
             bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none
+                &none &none &none &none &none &none   &none &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none             &none &none &none
+				                                                              &none &none &none
             >;
         };
 
         layer_3 {
             bindings =<
-                &none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none
+                &none &none &none &none &none &none   &none &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none &none &none &none &none
+				&none &none &none &none &none &none   &none &none             &none &none &none
+				                                                              &none &none &none
             >;
         };
     };
