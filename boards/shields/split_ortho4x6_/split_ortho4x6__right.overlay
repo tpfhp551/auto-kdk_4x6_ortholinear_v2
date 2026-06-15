@@ -45,6 +45,22 @@
             , <&akdk_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_temp_layer 1 2000>;
+
+        scroll_normal {
+            layers = <7>;
+            input-processors =
+                <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
+                <&zip_xy_to_scroll_mapper>,
+                <&zip_scroll_scaler 1 6>;
+        };
+    };
 };
 
 &physical_layout0 {
@@ -60,7 +76,6 @@
                 <NRF_PSEL(SPIM_MISO, 1, 9)>;
         };
     };
-
     spi0_sleep: spi0_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 12)>,
@@ -85,20 +100,5 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
-    };
-};
-
-&trackball_listener {
-    device = <&trackball>;
-    input-processors =
-        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_temp_layer 1 2000>;
-
-    scroll_normal {
-        layers = <7>;
-        input-processors =
-            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
-            <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 6>;
     };
 };
