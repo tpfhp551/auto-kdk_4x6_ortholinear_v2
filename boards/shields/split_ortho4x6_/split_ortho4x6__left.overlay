@@ -28,19 +28,18 @@
 
         diode-direction = "col2row";
     row-gpios
-        = <&akdk_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&akdk_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        = <&akdk_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&akdk_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&akdk_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&akdk_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&akdk_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
-
     col-gpios
-        = <&akdk_d 15 GPIO_ACTIVE_HIGH>
-        , <&akdk_d 16 GPIO_ACTIVE_HIGH>
-        , <&akdk_d 17 GPIO_ACTIVE_HIGH>
-        , <&akdk_d 18 GPIO_ACTIVE_HIGH>
+        = <&akdk_d 7 GPIO_ACTIVE_HIGH>
         , <&akdk_d 8 GPIO_ACTIVE_HIGH>
-        , <&akdk_d 7 GPIO_ACTIVE_HIGH>
+        , <&akdk_d 18 GPIO_ACTIVE_HIGH>
+        , <&akdk_d 17 GPIO_ACTIVE_HIGH>
+        , <&akdk_d 16 GPIO_ACTIVE_HIGH>
+        , <&akdk_d 15 GPIO_ACTIVE_HIGH>
         ;
     };
 
