@@ -45,12 +45,6 @@
             , <&akdk_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
-
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-    };
 };
 
 &physical_layout0 {
@@ -66,6 +60,7 @@
                 <NRF_PSEL(SPIM_MISO, 1, 9)>;
         };
     };
+
     spi0_sleep: spi0_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 12)>,
@@ -83,6 +78,7 @@
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
+
     trackball: trackball@0 {
         status = "okay";
         compatible = "pixart,paw3222";
@@ -93,9 +89,11 @@
 };
 
 &trackball_listener {
+    device = <&trackball>;
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
         <&zip_temp_layer 1 2000>;
+
     scroll_normal {
         layers = <7>;
         input-processors =
