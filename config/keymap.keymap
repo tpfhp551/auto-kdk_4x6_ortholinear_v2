@@ -131,28 +131,28 @@
 
         layer_2 {
             bindings = <
-&to 0   &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp LC(LS(TAB))   &kp LC(TAB)        &kp LC(L)           &trans  &kp F5     &mkp MB4        &kp LC(TAB)  &mkp MB5         &kp MINUS    &trans
-&trans  &trans          &msc SCRL_UP     &msc MOVE_Y(20)   &msc MOVE_Y(100)   &msc MOVE_Y(1000)   &trans  &kp LG(L)  &mkp MB1        &mkp MB3     &mkp MB2         &msc_v_up    &trans
-&trans  &trans          &msc SCRL_DOWN   &msc MOVE_Y(-20)  &msc MOVE_Y(-100)  &msc MOVE_Y(-1000)  &trans  &kp LC(L)  &msc SCRL_LEFT  &to 0        &msc SCRL_RIGHT  &msc_v_down
-&trans  &trans          &trans           &trans            &trans             &trans              &trans  &trans                                  &trans           &trans       &trans
-                                                                                                                                                  &trans           &trans       &trans
+&to 0   &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp LC(LS(TAB))   &kp LC(TAB)        &kp LC(L)           &trans  &kp F5     &mkp MB4        &kp LC(TAB)  &mkp MB5         &kp MINUS       &trans
+&trans  &trans          &msc SCRL_UP     &msc MOVE_Y(20)   &msc MOVE_Y(100)   &msc MOVE_Y(1000)   &trans  &kp LG(L)  &mkp MB1        &mkp MB3     &mkp MB2         &kp AT_SIGN     &trans
+&trans  &trans          &msc SCRL_DOWN   &msc MOVE_Y(-20)  &msc MOVE_Y(-100)  &msc MOVE_Y(-1000)  &trans  &kp LC(L)  &msc SCRL_LEFT  &kp LG(E)    &msc SCRL_RIGHT  &kp UNDERSCORE
+&trans  &trans          &trans           &trans            &trans             &trans              &trans  &trans                                  &trans           &trans          &trans
+                                                                                                                                                  &trans           &trans          &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &kp DOUBLE_QUOTES  &kp SQT        &kp LESS_THAN     &kp GREATER_THAN   &kp GRAVE  &kp UNDERSCORE  &kp EXCLAMATION  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &trans
-&trans  &kp HASH           &kp AMPERSAND  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE  &kp AT_SIGN     &kp PLUS         &kp MINUS     &kp SEMICOLON         &kp COLON              &kp PIPE   &trans
-&trans  &kp DOLLAR         &kp PERCENT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LCTRL  &kp EQUAL       &kp ASTERISK     &kp SLASH     &kp COMMA             &kp PERIOD             &kp SLASH
-&trans  &trans             &trans         &trans            &trans             &trans     &trans          &trans                                               &trans                 &trans     &trans
-                                                                                                                                                               &trans                 &trans     &trans
+&trans  &kp DOUBLE_QUOTES  &kp SQT        &kp LESS_THAN     &kp GREATER_THAN   &kp GRAVE  &none        &kp EXCLAMATION  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &trans
+&trans  &kp HASH           &kp AMPERSAND  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE  &kp AT_SIGN  &kp PLUS         &kp MINUS     &kp SEMICOLON         &kp COLON              &kp PIPE        &trans
+&trans  &kp DOLLAR         &kp PERCENT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LCTRL  &kp EQUAL    &kp ASTERISK     &kp SLASH     &kp COMMA             &kp PERIOD             &kp UNDERSCORE
+&trans  &trans             &trans         &trans            &trans             &trans     &trans       &trans                                               &trans                 &trans          &trans
+                                                                                                                                                            &trans                 &trans          &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&kp BACKSPACE         &kp KP_DOT             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp C_VOLUME_UP    &kp DELETE     &kp HOME      &kp UP          &kp END      &kp DELETE     &trans
-&kp ENTER             &kp KP_NUMBER_0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &trans             &kp PAGE_UP    &kp LEFT      &kp DOWN_ARROW  &kp RIGHT    &msc_v_up      &trans
+&kp BACKSPACE         &kp KP_DOT             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &none              &kp DELETE     &kp HOME      &kp UP          &kp END      &kp DELETE     &trans
+&kp ENTER             &kp KP_NUMBER_0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp C_VOLUME_UP    &kp PAGE_UP    &kp LEFT      &kp DOWN_ARROW  &kp RIGHT    &msc_v_up      &trans
 &kp LEFT_ARROW        &kp RIGHT_ARROW        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SLASH     &kp C_VOLUME_DOWN  &kp PAGE_DOWN  &kp LS(HOME)  &row_select     &kp LS(END)  &msc_v_down
 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_EQUAL     &kp COLON        &trans           &kp KP_MULTIPLY  &trans             &trans                                       &trans       &kp PAGE_UP    &trans
                                                                                                                                                                                  &kp HOME     &kp PAGE_DOWN  &kp END
@@ -161,21 +161,21 @@
 
         layer_5 {
             bindings = <
-&trans  &none   &kp F7  &kp F8  &kp F9  &kp F12  &none   &none   &kp F1  &kp F2   &kp F3   &kp F4   &trans
-&trans  &none   &kp F4  &kp F5  &kp F6  &kp F11  &none   &none   &kp F5  &kp F6   &kp F7   &kp F8   &trans
-&trans  &none   &kp F1  &kp F2  &kp F3  &kp F10  &none   &none   &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans                   &trans   &trans   &trans
-                                                                                  &trans   &trans   &trans
+&trans  &none   &kp F7  &kp F8  &kp F9  &kp F12  &none   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans
+&trans  &none   &kp F4  &kp F5  &kp F6  &kp F11  &none   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans
+&trans  &none   &kp F1  &kp F2  &kp F3  &kp F10  &none   &kp F11  &kp F12  &kp F13  &kp F14  &kp F15
+&trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans                     &trans   &trans   &trans
+                                                                                    &trans   &trans   &trans
             >;
         };
 
         layer_6 {
             bindings = <
-&bootloader  &none   &none   &none       &kp KP_NUMLOCK  &kp INSERT      &none         &none         &none         &none         &none   &none   &none
-&none        &none   &none   &caps_word  &kp CAPSLOCK    &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none   &none   &none
-&none        &none   &none   &none       &bt BT_PRV      &bt BT_NXT      &none         &none         &none         &sys_reset    &trans  &trans
-&trans       &trans  &trans  &trans      &none           &bt BT_CLR_ALL  &bt BT_CLR    &none                                     &none   &none   &none
-                                                                                                                                 &none   &none   &none
+&bootloader  &none  &none  &none  &none  &none  &none           &bt BT_PRV    &bt BT_NXT    &none         &none           &none         &none
+&sys_reset   &none  &none  &none  &none  &none  &kp KP_NUMLOCK  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &none
+&none        &none  &none  &none  &none  &none  &caps_word      &none         &none         &none         &none           &none
+&none        &none  &none  &none  &none  &none  &kp CAPSLOCK    &kp INS                                   &bt BT_CLR_ALL  &none         &bt BT_CLR
+                                                                                                          &none           &none         &none
             >;
         };
 
