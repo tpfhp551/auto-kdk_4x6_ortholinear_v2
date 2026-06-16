@@ -131,9 +131,9 @@
 
         layer_2 {
             bindings = <
-&to 0   &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp LC(LS(TAB))   &kp LC(TAB)        &kp LC(L)           &trans  &kp F5     &mkp MB4        &kp LC(TAB)  &mkp MB5         &kp MINUS       &trans
-&trans  &trans          &msc SCRL_UP     &msc MOVE_Y(20)   &msc MOVE_Y(100)   &msc MOVE_Y(1000)   &trans  &kp LG(L)  &mkp MB1        &mkp MB3     &mkp MB2         &kp AT_SIGN     &trans
-&trans  &trans          &msc SCRL_DOWN   &msc MOVE_Y(-20)  &msc MOVE_Y(-100)  &msc MOVE_Y(-1000)  &trans  &kp LC(L)  &msc SCRL_LEFT  &kp LG(E)    &msc SCRL_RIGHT  &kp UNDERSCORE
+&to 0   &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp LC(LS(TAB))   &kp LC(TAB)        &kp LC(L)           &trans  &kp F5     &mkp MB4        &kp LC(TAB)  &mkp MB5         &kp DELETE      &trans
+&trans  &trans          &msc SCRL_UP     &msc MOVE_Y(20)   &msc MOVE_Y(100)   &msc MOVE_Y(1000)   &trans  &kp LG(L)  &mkp MB1        &mkp MB3     &mkp MB2         &msc SCRL_UP    &trans
+&trans  &trans          &msc SCRL_DOWN   &msc MOVE_Y(-20)  &msc MOVE_Y(-100)  &msc MOVE_Y(-1000)  &trans  &kp LC(L)  &msc SCRL_LEFT  &kp LG(E)    &msc SCRL_RIGHT  &msc SCRL_DOWN
 &trans  &trans          &trans           &trans            &trans             &trans              &trans  &trans                                  &trans           &trans          &trans
                                                                                                                                                   &trans           &trans          &trans
             >;
@@ -151,11 +151,11 @@
 
         layer_4 {
             bindings = <
-&kp BACKSPACE         &kp KP_DOT             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &none              &kp DELETE     &kp HOME      &kp UP          &kp END      &kp DELETE     &trans
-&kp ENTER             &kp KP_NUMBER_0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp C_VOLUME_UP    &kp PAGE_UP    &kp LEFT      &kp DOWN_ARROW  &kp RIGHT    &msc_v_up      &trans
-&kp LEFT_ARROW        &kp RIGHT_ARROW        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SLASH     &kp C_VOLUME_DOWN  &kp PAGE_DOWN  &kp LS(HOME)  &row_select     &kp LS(END)  &msc_v_down
-&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_EQUAL     &kp COLON        &trans           &kp KP_MULTIPLY  &trans             &trans                                       &trans       &kp PAGE_UP    &trans
-                                                                                                                                                                                 &kp HOME     &kp PAGE_DOWN  &kp END
+&kp BACKSPACE         &kp KP_DOT             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &none              &kp DELETE     &kp HOME      &kp UP          &kp END      &kp MINUS       &trans
+&kp ENTER             &kp KP_NUMBER_0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp C_VOLUME_UP    &kp PAGE_UP    &kp LEFT      &kp DOWN_ARROW  &kp RIGHT    &kp AT_SIGN     &trans
+&kp LEFT_ARROW        &kp RIGHT_ARROW        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SLASH     &kp C_VOLUME_DOWN  &kp PAGE_DOWN  &kp LS(HOME)  &row_select     &kp LS(END)  &kp UNDERSCORE
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_EQUAL     &kp COLON        &trans           &kp KP_MULTIPLY  &trans             &trans                                       &trans       &kp PAGE_UP     &trans
+                                                                                                                                                                                 &kp HOME     &kp PAGE_DOWN   &kp END
             >;
         };
 
