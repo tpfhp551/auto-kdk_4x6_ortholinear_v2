@@ -58,6 +58,21 @@
             bindings = <&mo 7>;
             key-positions = <22 23>;
         };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <15 16 42>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <15 16 42>;
+        };
+
+        row_select {
+            bindings = <&row_select>;
+            key-positions = <28 29 42>;
+        };
     };
 
     macros {
@@ -116,11 +131,11 @@
 
         layer_0 {
             bindings = <
-&kp TAB     &kp Q     &kp W     &kp E        &kp R        &kp T        &none           &kp Y            &kp U  &kp I      &kp O           &kp P           &kp BACKSPACE
-&kp LCTRL   &kp A     &kp S     &kp D        &kp F        &kp G        &kp LANGUAGE_1  &kp H            &kp J  &kp K      &kp L           &kp SEMICOLON   &kp ENTER
-&kp LSHIFT  &kp Z     &kp X     &kp C        &kp V        &kp B        &kp LANGUAGE_2  &kp N            &kp M  &kp COMMA  &kp DOT         &kp SLASH
-&kp ESCAPE  &kp LGUI  &kp LALT  &lt 2 SPACE  &lt 4 SPACE  &lt 3 SPACE  &lt 3 DELETE    &lt 4 BACKSPACE                    &mo 2           &kp UP_ARROW    &mo 7
-                                                                                                                          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp TAB     &kp Q     &kp W     &kp E            &kp R             &kp T        &none          &kp Y             &kp U  &kp I      &kp O           &kp P           &kp BACKSPACE
+&kp LCTRL   &kp A     &kp S     &kp D            &kp F             &kp G        &kp BACKSPACE  &kp H             &kp J  &kp K      &kp L           &kp SEMICOLON   &kp ENTER
+&kp LSHIFT  &kp Z     &kp X     &kp C            &kp V             &kp B        &kp DELETE     &kp N             &kp M  &kp COMMA  &kp DOT         &kp SLASH
+&kp ESCAPE  &kp LGUI  &kp LALT  &lt 2 LG(SPACE)  &lt 4 LANGUAGE_2  &lt 3 SPACE  &lt 3 SPACE    &lt 4 LANGUAGE_1                    &lt_to 2 2      &kp UP_ARROW    &mo 7
+                                                                                                                                   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
 
@@ -159,7 +174,7 @@
 &kp BACKSPACE         &kp KP_DOT             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &none              &kp DELETE     &kp HOME      &kp UP          &kp END      &kp MINUS       &trans
 &kp ENTER             &kp KP_NUMBER_0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp C_VOLUME_UP    &kp PAGE_UP    &kp LEFT      &kp DOWN_ARROW  &kp RIGHT    &kp AT_SIGN     &trans
 &kp LEFT_ARROW        &kp RIGHT_ARROW        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SLASH     &kp C_VOLUME_DOWN  &kp PAGE_DOWN  &kp LS(HOME)  &row_select     &kp LS(END)  &kp UNDERSCORE
-&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_EQUAL     &kp COLON        &trans           &kp KP_MULTIPLY  &trans             &trans                                       &trans       &kp PAGE_UP     &trans
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp COLON        &trans           &kp KP_MULTIPLY  &trans             &trans                                       &trans       &kp PAGE_UP     &trans
                                                                                                                                                                                  &kp HOME     &kp PAGE_DOWN   &kp END
             >;
         };
