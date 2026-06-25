@@ -171,11 +171,11 @@
 
         layer_4 {
             bindings = <
-&kp BACKSPACE         &kp KP_DOT             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &none              &kp DELETE     &kp HOME      &kp UP          &kp END      &kp MINUS       &trans
-&kp ENTER             &kp KP_NUMBER_0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp C_VOLUME_UP    &kp PAGE_UP    &kp LEFT      &kp DOWN_ARROW  &kp RIGHT    &kp AT_SIGN     &trans
-&kp LEFT_ARROW        &kp RIGHT_ARROW        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SLASH     &kp C_VOLUME_DOWN  &kp PAGE_DOWN  &kp LS(HOME)  &row_select     &kp LS(END)  &kp UNDERSCORE
-&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp COLON        &trans           &kp KP_MULTIPLY  &trans             &trans                                       &trans       &kp PAGE_UP     &trans
-                                                                                                                                                                                 &kp HOME     &kp PAGE_DOWN   &kp END
+&kp BACKSPACE         &kp KP_DOT             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &none              &kp DELETE      &kp HOME      &kp UP          &kp END      &kp MINUS       &trans
+&kp ENTER             &kp KP_NUMBER_0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp C_VOLUME_UP    &kp PAGE_UP     &kp LEFT      &kp DOWN_ARROW  &kp RIGHT    &kp AT_SIGN     &trans
+&kp LEFT_ARROW        &kp RIGHT_ARROW        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SLASH     &kp C_VOLUME_DOWN  &kp PAGE_DOWN   &kp LS(HOME)  &row_select     &kp LS(END)  &kp UNDERSCORE
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp COLON        &trans           &kp KP_MULTIPLY  &kp LCTRL          &kp LEFT_SHIFT                                &trans       &kp PAGE_UP     &trans
+                                                                                                                                                                                  &kp HOME     &kp PAGE_DOWN   &kp END
             >;
         };
 
