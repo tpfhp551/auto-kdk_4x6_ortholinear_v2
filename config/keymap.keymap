@@ -151,11 +151,11 @@
 
         layer_2 {
             bindings = <
-&msc MOVE_X(-15)  &msc MOVE_X(-20)  &msc MOVE_X(-10)  &msc MOVE_X(10)   &msc MOVE_X(20)    &msc MOVE_X(15)     &trans  &kp F5     &mkp MB4        &kp LC(TAB)  &mkp MB5         &kp DELETE      &trans
-&trans            &msc MOVE_Y(5)    &msc MOVE_Y(10)   &msc MOVE_Y(20)   &msc MOVE_Y(100)   &msc MOVE_Y(1000)   &trans  &kp LG(L)  &mkp MB1        &mkp MB3     &mkp MB2         &msc SCRL_UP    &trans
-&trans            &msc MOVE_Y(-5)   &msc MOVE_Y(-10)  &msc MOVE_Y(-20)  &msc MOVE_Y(-100)  &msc MOVE_Y(-1000)  &trans  &kp LC(L)  &msc SCRL_LEFT  &kp LG(E)    &msc SCRL_RIGHT  &msc SCRL_DOWN
-&to 0             &trans            &trans            &trans            &trans             &trans              &trans  &trans                                  &trans           &trans          &trans
-                                                                                                                                                               &trans           &trans          &trans
+&msc MOVE_X(-15)  &msc MOVE_X(-20)  &msc MOVE_X(-10)  &msc MOVE_X(10)   &msc MOVE_X(20)    &msc MOVE_X(15)     &trans       &kp F5            &mkp MB4        &kp LC(L)  &mkp MB5         &kp DELETE      &trans
+&trans            &msc MOVE_Y(5)    &msc MOVE_Y(10)   &msc MOVE_Y(20)   &msc MOVE_Y(100)   &msc MOVE_Y(1000)   &kp LA(TAB)  &msc MOVE_Y(15)   &mkp MB1        &mkp MB3   &mkp MB2         &msc SCRL_UP    &trans
+&trans            &msc MOVE_Y(-5)   &msc MOVE_Y(-10)  &msc MOVE_Y(-20)  &msc MOVE_Y(-100)  &msc MOVE_Y(-1000)  &kp LC(TAB)  &msc MOVE_Y(-15)  &msc SCRL_LEFT  &kp LG(E)  &msc SCRL_RIGHT  &msc SCRL_DOWN
+&to 0             &trans            &trans            &trans            &trans             &trans              &trans       &trans                                       &trans           &trans          &trans
+                                                                                                                                                                         &trans           &trans          &trans
             >;
         };
 
