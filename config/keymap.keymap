@@ -168,7 +168,7 @@
             bindings = <
 &msc MOVE_X(-50)  &msc MOVE_X(-20)  &msc MOVE_X(-10)  &msc MOVE_X(10)   &msc MOVE_X(20)   &msc MOVE_X(50)     &trans       &kp F5          &mkp MB4        &kp LC(L)  &mkp MB5         &kp DELETE         &trans
 &trans            &msc MOVE_Y(5)    &msc MOVE_Y(10)   &msc MOVE_Y(20)   &msc MOVE_Y(50)   &msc MOVE_Y(1000)   &kp LA(TAB)  &msc SCRL_UP    &mkp MB1        &mkp MB3   &mkp MB2         &msc MOVE_Y(40)    &trans
-&trans            &msc MOVE_Y(-5)   &msc MOVE_Y(-10)  &msc MOVE_Y(-20)  &msc MOVE_Y(-50)  &msc MOVE_Y(-1000)  &kp LC(TAB)  &msc SCRL_DOWN  &msc SCRL_LEFT  &kp LG(E)  &msc SCRL_RIGHT  &msc MOVE_Y(-4/0)
+&trans            &msc MOVE_Y(-5)   &msc MOVE_Y(-10)  &msc MOVE_Y(-20)  &msc MOVE_Y(-50)  &msc MOVE_Y(-1000)  &kp LC(TAB)  &msc SCRL_DOWN  &msc SCRL_LEFT  &kp LG(E)  &msc SCRL_RIGHT  &msc MOVE_Y(-40)
 &to 0             &trans            &trans            &trans            &trans            &trans              &trans       &trans                                     &trans           &trans             &trans
                                                                                                                                                                       &trans           &trans             &trans
             >;
