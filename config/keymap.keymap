@@ -167,7 +167,7 @@
         layer_2 {
             bindings = <
 &trans  &kp HOME        &kp UP_ARROW    &kp END          &none          &none               &trans       &kp F5          &mkp MB4        &kp LC(L)  &mkp MB5         &kp DELETE        &trans
-&trans  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &msc MOVE_Y(1000)   &kp LA(TAB)  &msc SCRL_UP    &mkp MB1        &mkp MB3   &mkp MB2         &msc MOVE_Y(40)   &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &msc MOVE_Y(1000)   &kp LA(TAB)  &msc SCRL_UP    &mkp MB1        &mkp MB3   &mkp MB2         &msc MOVE_Y(40)   &trans
 &trans  &kp LS(HOME)    &row_select     &kp LS(END)      &kp BACKSPACE  &msc MOVE_Y(-1000)  &kp LC(TAB)  &msc SCRL_DOWN  &msc SCRL_LEFT  &kp LG(E)  &msc SCRL_RIGHT  &msc MOVE_Y(-40)
 &to 0   &trans          &trans          &trans           &kp LC(Z)      &trans              &trans       &trans                                     &trans           &trans            &trans
                                                                                                                                                     &trans           &trans            &trans
