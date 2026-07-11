@@ -40,7 +40,7 @@
         compatible = "zmk,combos";
 
         Function_layer {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <44 45>;
         };
 
@@ -50,12 +50,12 @@
         };
 
         bluetooth_layer {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <38 39 40>;
         };
 
         scroll_layer {
-            bindings = <&mo 7>;
+            bindings = <&mo 8>;
             key-positions = <22 23>;
         };
 
@@ -75,7 +75,7 @@
         };
 
         scroll_layer2 {
-            bindings = <&mo 7>;
+            bindings = <&mo 8>;
             key-positions = <25 48>;
         };
 
@@ -144,17 +144,17 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        Default_Layer {
             bindings = <
 &kp TAB     &kp Q     &kp W     &kp E            &kp R             &kp T        &none          &kp Y             &kp U  &kp I      &kp O           &kp P           &kp BACKSPACE
 &kp LCTRL   &kp A     &kp S     &kp D            &kp F             &kp G        &kp BACKSPACE  &kp H             &kp J  &kp K      &kp L           &kp SEMICOLON   &kp ENTER
 &kp LSHIFT  &kp Z     &kp X     &kp C            &kp V             &kp B        &kp DELETE     &kp N             &kp M  &kp COMMA  &kp DOT         &kp SLASH
-&gresc      &kp LGUI  &kp LALT  &lt 2 LG(SPACE)  &lt 4 LANGUAGE_2  &lt 3 SPACE  &lt 3 SPACE    &lt 4 LANGUAGE_1                    &mo 7           &kp UP_ARROW    &mo 2
+&gresc      &kp LGUI  &kp LALT  &lt 2 LG(SPACE)  &lt 4 LANGUAGE_2  &lt 3 SPACE  &lt 3 SPACE    &lt 4 LANGUAGE_1                    &mo 8           &kp UP_ARROW    &mo 2
                                                                                                                                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
 
-        layer_1 {
+        Auto_mouse_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans  &trans
@@ -164,7 +164,7 @@
             >;
         };
 
-        layer_2 {
+        Mouse_Layer {
             bindings = <
 &trans  &kp HOME        &kp UP_ARROW    &kp END          &none          &none               &trans       &kp F5          &mkp MB4        &kp LC(L)  &mkp MB5         &kp DELETE        &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &msc MOVE_Y(1000)   &kp LA(TAB)  &msc SCRL_UP    &mkp MB1        &mkp MB3   &mkp MB2         &msc MOVE_Y(40)   &trans
@@ -174,7 +174,7 @@
             >;
         };
 
-        layer_3 {
+        Symbol_Layer {
             bindings = <
 &trans  &kp DOUBLE_QUOTES  &kp SQT        &kp LESS_THAN     &kp GREATER_THAN   &kp GRAVE  &none        &kp EXCLAMATION  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &trans
 &trans  &kp HASH           &kp AMPERSAND  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE  &kp AT_SIGN  &kp PLUS         &kp MINUS     &kp SEMICOLON         &kp COLON              &kp PIPE        &trans
@@ -184,7 +184,7 @@
             >;
         };
 
-        layer_4 {
+        Number_Layer {
             bindings = <
 &kp BACKSPACE         &kp KP_DOT             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &none              &kp DELETE      &kp HOME      &kp UP          &kp END      &kp MINUS       &trans
 &kp ENTER             &kp KP_NUMBER_0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp C_VOLUME_UP    &kp PAGE_UP     &kp LEFT      &kp DOWN_ARROW  &kp RIGHT    &kp AT_SIGN     &trans
@@ -194,7 +194,17 @@
             >;
         };
 
-        layer_5 {
+        ARROW_Layer {
+            bindings = <
+&trans  &kp HOME        &kp UP_ARROW    &kp END          &none          &none               &none   &none           &kp HOME        &kp UP_ARROW    &kp END          &kp DELETE     &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &msc MOVE_Y(1000)   &trans  &msc SCRL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP    &trans
+&trans  &kp LS(HOME)    &row_select     &kp LS(END)      &kp BACKSPACE  &msc MOVE_Y(-1000)  &trans  &msc SCRL_DOWN  &kp LS(HOME)    &row_select     &kp LS(END)      &kp PAGE_DOWN
+&trans  &trans          &trans          &trans           &kp LC(Z)      &trans              &trans  &trans                                          &trans           &trans         &trans
+                                                                                                                                                    &trans           &trans         &trans
+            >;
+        };
+
+        Function_Layer {
             bindings = <
 &trans  &none   &kp F7  &kp F8  &kp F9  &kp F12  &none   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans
 &trans  &none   &kp F4  &kp F5  &kp F6  &kp F11  &none   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans
@@ -204,7 +214,7 @@
             >;
         };
 
-        layer_6 {
+        System_Layer {
             bindings = <
 &bootloader  &none  &none  &none  &none  &none  &none           &bt BT_PRV    &bt BT_NXT    &none         &none           &none         &none
 &sys_reset   &none  &none  &none  &none  &none  &kp KP_NUMLOCK  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &none
@@ -214,7 +224,7 @@
             >;
         };
 
-        layer_7 {
+        Scroll_Layer {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none           &none             &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &msc SCRL_UP    &msc MOVE_Y(40)   &none
