@@ -61,12 +61,12 @@
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <15 16 42>;
+            key-positions = <42 2 3>;
         };
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <15 16 42>;
+            key-positions = <16 42 15>;
         };
 
         row_select {
@@ -81,7 +81,7 @@
 
         mouse_mode {
             bindings = <&to 2>;
-            key-positions = <12 25 48>;
+            key-positions = <25 8 9 10>;
         };
 
         layer_0 {
