@@ -201,10 +201,10 @@
 
         Symbol_Layer {
             bindings = <
-&trans       &kp DOUBLE_QUOTES  &kp SQT        &kp LESS_THAN     &kp GREATER_THAN   &kp GRAVE  &none              &kp EXCLAMATION  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &trans
-&kp AT_SIGN  &kp HASH           &kp AMPERSAND  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE  &kp C_VOLUME_UP    &kp PLUS         &kp MINUS     &kp SEMICOLON         &kp COLON              &kp PIPE        &trans
-&kp EQUAL    &kp DOLLAR         &kp PERCENT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LCTRL  &kp C_VOLUME_DOWN  &kp ASTERISK     &kp SLASH     &kp COMMA             &kp PERIOD             &kp UNDERSCORE
-&trans       &trans             &trans         &trans            &trans             &trans     &trans             &trans                                               &trans                 &trans          &trans
+&trans       &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT        &kp DOUBLE_QUOTES  &none              &kp EXCLAMATION  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &trans
+&kp AT_SIGN  &kp TILDE  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp AMPERSAND  &kp HASH           &kp C_VOLUME_UP    &kp PLUS         &kp MINUS     &kp SEMICOLON         &kp COLON              &kp PIPE        &trans
+&kp EQUAL    &kp CARET  &kp LESS_THAN     &kp GREATER_THAN   &kp PERCENT    &kp DOLLAR         &kp C_VOLUME_DOWN  &kp ASTERISK     &kp SLASH     &kp COMMA             &kp PERIOD             &kp UNDERSCORE
+&trans       &trans     &trans            &trans             &trans         &trans             &trans             &trans                                               &trans                 &trans          &trans
                                                                                                                                                                        &trans                 &trans          &trans
             >;
         };
