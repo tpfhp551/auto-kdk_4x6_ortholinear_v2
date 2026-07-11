@@ -88,6 +88,11 @@
             bindings = <&to 0>;
             key-positions = <48 46>;
         };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <12 26>;
+        };
     };
 
     macros {
