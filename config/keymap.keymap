@@ -56,7 +56,7 @@
 
         scroll_layer {
             bindings = <&mo 8>;
-            key-positions = <22 23>;
+            key-positions = <23 24>;
         };
 
         kp_equal {
@@ -79,14 +79,14 @@
             key-positions = <25 48>;
         };
 
-        mouse_mode {
+        To_mouse_mode {
             bindings = <&to 2>;
             key-positions = <8 9 10>;
         };
 
-        layer_0 {
+        To_layer_0 {
             bindings = <&to 0>;
-            key-positions = <34 36 35>;
+            key-positions = <32 19>;
         };
 
         kp_delete {
@@ -231,11 +231,11 @@
 
         Scroll_Layer {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none           &none             &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &msc SCRL_UP    &msc MOVE_Y(40)   &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &msc SCRL_DOWN  &msc MOVE_Y(-40)
-&none  &none  &none  &none  &none  &none  &none  &none                &none           &none             &none
-                                                                      &none           &none             &none
+&none  &none  &none  &none  &none  &none  &none  &none  &msc SCRL_UP    &msc MOVE_Y(20)   &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &msc SCRL_DOWN  &msc MOVE_Y(-20)  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none           &none             &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none                                    &none  &none  &none
+                                                                                          &none  &none  &none
             >;
         };
     };
