@@ -154,7 +154,7 @@
 &kp TAB     &kp Q     &kp W     &kp E            &kp R             &kp T        &none                       &kp Y             &kp U  &kp I      &kp O           &kp P           &kp BACKSPACE
 &kp LCTRL   &kp A     &kp S     &kp D            &kp F             &kp G        &mt LEFT_CONTROL BACKSPACE  &kp H             &kp J  &kp K      &kp L           &kp SEMICOLON   &kp ENTER
 &kp LSHIFT  &kp Z     &kp X     &kp C            &kp V             &kp B        &mt LEFT_SHIFT DELETE       &kp N             &kp M  &kp COMMA  &kp DOT         &kp SLASH
-&gresc      &kp LGUI  &kp LALT  &lt 3 LG(SPACE)  &lt 4 LANGUAGE_2  &lt 5 SPACE  &lt 5 SPACE                 &lt 4 LANGUAGE_1                    &mo 2           &kp UP_ARROW    &mo 8
+&gresc      &kp LGUI  &kp LALT  &lt 3 LG(SPACE)  &lt 4 LANGUAGE_2  &lt 5 SPACE  &lt 5 SPACE                 &lt 3 LANGUAGE_1                    &mo 2           &kp UP_ARROW    &mo 8
                                                                                                                                                 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
