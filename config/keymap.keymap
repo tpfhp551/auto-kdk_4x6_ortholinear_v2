@@ -107,6 +107,34 @@
             bindings = <&kp HOME &kp LS(END)>;
             label = "ROW_SELECT";
         };
+
+        mmv_left_up: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT &mmv MOVE_UP>;
+            label = "NEW_MACRO";
+        };
+
+        mmv_right_up: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT &mmv MOVE_UP>;
+            label = "NEW_MACRO";
+        };
+
+        mmv_left_down: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT &mmv MOVE_DOWN>;
+            label = "NEW_MACRO";
+        };
+
+        mmv_right_down: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT &mmv MOVE_DOWN>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -246,9 +274,9 @@
 
         LH_Mouse_Layer {
             bindings = <
-&trans  &kp HOME        &mmv MOVE_UP    &kp END          &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mkp MB1        &mkp MB2        &mkp MB3         &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mmv_left_up    &mmv MOVE_UP    &mmv_right_up    &msc SCRL_UP    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &mkp MB2        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mmv_left_down  &mmv MOVE_DOWN  &mmv_right_down  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans          &trans           &trans          &trans  &trans  &trans                  &trans  &trans  &trans
                                                                                                                  &trans  &trans  &trans
             >;
