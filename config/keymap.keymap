@@ -114,27 +114,6 @@
             bindings = <&mmv MOVE_LEFT &mmv MOVE_UP>;
             label = "NEW_MACRO";
         };
-
-        mmv_right_up: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_RIGHT &mmv MOVE_UP>;
-            label = "NEW_MACRO";
-        };
-
-        mmv_left_down: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_LEFT &mmv MOVE_DOWN>;
-            label = "NEW_MACRO";
-        };
-
-        mmv_right_down: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_RIGHT &mmv MOVE_DOWN>;
-            label = "NEW_MACRO";
-        };
     };
 
     behaviors {
