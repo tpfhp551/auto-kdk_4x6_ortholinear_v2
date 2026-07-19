@@ -108,11 +108,32 @@
             label = "ROW_SELECT";
         };
 
-        mmv_left_up: new_macro {
+        mmv_left_up: mmv_left_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mmv MOVE_LEFT &mmv MOVE_UP>;
-            label = "NEW_MACRO";
+            label = "MMV_LEFT_UP";
+        };
+
+        mmv_right_up: mmv_right_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT &mmv MOVE_UP>;
+            label = "MMV_RIGHT_UP";
+        };
+
+        mmv_left_down: mmv_left_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT &mmv MOVE_DOWN>;
+            label = "MMV_LEFT_DOWN";
+        };
+
+        mmv_right_down: mmv_right_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT &mmv MOVE_DOWN>;
+            label = "MMV_RIGHT_DOWN";
         };
     };
 
