@@ -93,6 +93,11 @@
             bindings = <&kp DELETE>;
             key-positions = <12 26>;
         };
+
+        LH_Mouse {
+            bindings = <&mo 9>;
+            key-positions = <26 41>;
+        };
     };
 
     macros {
