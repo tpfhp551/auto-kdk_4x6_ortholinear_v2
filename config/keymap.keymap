@@ -107,6 +107,58 @@
             bindings = <&kp HOME &kp LS(END)>;
             label = "ROW_SELECT";
         };
+
+        mmv_up_left: mmv_up_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mmv MOVE_UP &mmv MOVE_LEFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mmv MOVE_UP &mmv MOVE_LEFT>;
+
+            label = "MMV_UP_LEFT";
+        };
+
+        mmv_up_right: mmv_up_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mmv MOVE_UP &mmv MOVE_RIGHT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mmv MOVE_UP &mmv MOVE_RIGHT>;
+
+            label = "MMV_UP_RIGHT";
+        };
+
+        mmv_down_left: mmv_down_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mmv MOVE_DOWN &mmv MOVE_LEFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mmv MOVE_DOWN &mmv MOVE_LEFT>;
+
+            label = "MMV_DOWN_LEFT";
+        };
+
+        mmv_down_right: mmv_down_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mmv MOVE_DOWN &mmv MOVE_RIGHT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mmv MOVE_DOWN &mmv MOVE_RIGHT>;
+
+            label = "MMV_DOWN_RIGHT";
+        };
     };
 
     behaviors {
